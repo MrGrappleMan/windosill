@@ -6,11 +6,11 @@ w32tm /config /syncfromflags:all /manualpeerlist:"time.google.com time.windows.c
 
 # 🏪 Winget
 winget upgrade --all # Upgrade
-Set-Location "$Env:windir\\Temp\\Fynelium-NT\\export\\winget\\" # Sets the directory to where all jsons are stored
+Set-Location "$Env:windir\\Temp\\windosill\\export\\winget\\" # Sets the directory to where all jsons are stored
 Get-ChildItem -File | ForEach-Object { winget import -i $_.FullName --ignore-unavailable --ignore-versions --accept-package-agreements --accept-source-agreements }
 
 # 🧾 Registry ( regedit )
-Set-Location "$Env:windir\\Temp\\Fynelium-NT\\export\\registry\\" # Sets the directory to where all registry exports are stored
+Set-Location "$Env:windir\\Temp\\windosill\\export\\registry\\" # Sets the directory to where all registry exports are stored
 Get-ChildItem -File | ForEach-Object { regedit /s $_.FullName }=
 
 slmgr /ato # Forces a Windows activation check

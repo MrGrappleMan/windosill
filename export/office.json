@@ -4,11 +4,8 @@
   "Sources": [
     {
       "Packages": [
-        
-        {"PackageIdentifier": "LGUG2Z.komorebi"},
-        {"PackageIdentifier": "LGUG2Z.whkd"},
-        {"PackageIdentifier": "Raycast.Raycast"}
-        
+        {"PackageIdentifier": "ONLYOFFICE.DesktopEditors"},
+        {"PackageIdentifier": "JohannesMillan.superProductivity"}
       ],
       "SourceDetails": {
         "Argument": "https://cdn.winget.microsoft.com/cache",

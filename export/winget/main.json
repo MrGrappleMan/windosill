@@ -1,0 +1,42 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-06-06T00:00:00.000-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {"PackageIdentifier": "Microsoft.PCManager.Beta"},
+        {"PackageIdentifier": "Microsoft.WindowsPCHealthCheck"},
+        {"PackageIdentifier": "NickJohn.EnergyStarX"},
+        
+        {"PackageIdentifier": "UCBerkeley.BOINC"},
+        {"PackageIdentifier": "Microsoft.WSL"},
+        {"PackageIdentifier": "RedHat.Podman"},
+        {"PackageIdentifier": "RedHat.Podman-Desktop"},
+        
+        {"PackageIdentifier": "Giorgiotani.Peazip"},
+        {"PackageIdentifier": "AdrienAllard.FileConverter"},
+        {"PackageIdentifier": "monkeyWie.Gopeed"},
+        
+        {"PackageIdentifier": "TorProject.TorBrowser"},
+
+        {"PackageIdentifier": "Ollama.Ollama"},
+        
+        {"PackageIdentifier": "LGUG2Z.komorebi"},
+        {"PackageIdentifier": "LGUG2Z.whkd"},
+        {"PackageIdentifier": "Raycast.Raycast"},
+        
+        {"PackageIdentifier": "Microsoft.PowerShell"},
+        {"PackageIdentifier": "JanDeDobbeleer.OhMyPosh"}
+        
+        
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.12.240-preview"
+}

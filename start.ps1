@@ -1,16 +1,16 @@
-# Preparation for procedure
+# Start
 
-# ⚜️ Ensure admin rights
-if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
-	Write-Host "Not running as administrator, please try again with Ctrl + Shift + Enter"
-	Start-Sleep -Seconds 3
-	# powershell irm https://raw.githubusercontent.com/MrGrappleMan/Fynelium-NT/main/start.ps1 | iex
-	# Want to implement self elevation method here, ofcourse respecting user choice
-	exit
-}
+# Admin rights. If not, try self-elevate, or exit if user cancels
+  if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+        Write-Host "Not running as administrator, please try again with Ctrl + Shift + Enter"
+        Start-Sleep -Seconds 3
+        # powershell irm https://raw.githubusercontent.com/MrGrappleMan/windosill/main/start.ps1 | iex
+        # Want to implement self elevation method here, ofcourse respecting user choice
+        exit
+    }
 
 # 📂 Create storage directory
-$path = "$env:windir\Temp\Wintrix"
+$path = "$env:windir\Temp\windosill"
 if (Test-Path $path) { Remove-Item $path -Recurse -Force }
 New-Item -Path $path -ItemType Directory -Force | Out-Null
 
@@ -33,10 +33,10 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
 }
 
 # 🦠 Clone Repo
-git clone https://github.com/MrGrappleMan/Wintrix.git $path
+git clone https://github.com/MrGrappleMan/windosill.git $path
 
 # ⏩ Copy over files
-robocopy $Env:windir\\Temp\\Wintrix\\fsroot "C:\" /E
+robocopy $Env:windir\\Temp\\windosill\\fsroot "C:\" /E
 
 # 🖐️ User Interactive
 Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$path\script\main.ps1`"" -Verb RunAs

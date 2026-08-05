@@ -4,12 +4,8 @@
   "Sources": [
     {
       "Packages": [
-        
-        {"PackageIdentifier": "Google.GoogleDrive"},
-        {"PackageIdentifier": "spacedrive.Spacedrive"},
-        {"PackageIdentifier": "Giorgiotani.Peazip"},
-        {"PackageIdentifier": "AdrienAllard.FileConverter"}
-        
+        {"PackageIdentifier": "Rclone.Rclone"},
+        {"PackageIdentifier": "spacedrive.Spacedrive"}
       ],
       "SourceDetails": {
         "Argument": "https://cdn.winget.microsoft.com/cache",

@@ -4,12 +4,10 @@
   "Sources": [
     {
       "Packages": [
-		    
-		{"PackageIdentifier": "OBSProject.OBSStudio.Pre-release"},
-		{"PackageIdentifier": "KDE.Krita"},
-		{"PackageIdentifier": "KDE.KritaShellExtension"},
-		{"PackageIdentifier": "Inkscape.Inkscape"}
-        
+        {"PackageIdentifier": "OBSProject.OBSStudio.Pre-release"},
+        {"PackageIdentifier": "KDE.Krita"},
+        {"PackageIdentifier": "KDE.KritaShellExtension"},
+        {"PackageIdentifier": "Inkscape.Inkscape"}
        ],
       "SourceDetails": {
         "Argument": "https://cdn.winget.microsoft.com/cache",

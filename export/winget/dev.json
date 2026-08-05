@@ -5,13 +5,9 @@
     {
       "Packages": [
         {"PackageIdentifier": "GoLang.Go"},
-        {"PackageIdentifier": "GitHub.GitHubDesktop.Beta"},
+        {"PackageIdentifier": "DesktopPlus.DesktopPlus"},
         {"PackageIdentifier": "Microsoft.PowerShell.Preview"},
         {"PackageIdentifier": "ZedIndustries.Zed.Preview"},
-        {"PackageIdentifier": "JanDeDobbeleer.OhMyPosh"},
-        {"PackageIdentifier": "Microsoft.WSL"},
-        {"PackageIdentifier": "RedHat.Podman-Desktop"},
-        {"PackageIdentifier": "Ollama.Ollama"},
         {"PackageIdentifier": "Rustlang.Rustup"},
         {"PackageIdentifier": "Rustlang.Rust.MSVC"}
       ],

@@ -1,14 +1,5 @@
 # 😈 Services
 
-# Check for admin privileges
-$isAdmin = ([System.Security.Principal.WindowsPrincipal] [System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
-if (-not $isAdmin) {
-    Write-Host "Re-run with admin rights" -ForegroundColor Red
-    Write-Host "Press Enter to exit"
-    Read-Host
-    exit
-}
-
 # Required for the package management and updates stack for Windows
 $updates = @(
     "A",
