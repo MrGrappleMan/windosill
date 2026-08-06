@@ -4,7 +4,7 @@ Windows Registry Editor Version 5.00
 ; 🔁 Updates
 ; --------------------------------------------
 
-; 📍 No auto update maps. Just use your phone.
+; 📍 No use unless a tablet
 [HKEY_LOCAL_MACHINE\SYSTEM\Maps]
 "AutoUpdateEnabled"=dword:00000000
 
@@ -12,14 +12,14 @@ Windows Registry Editor Version 5.00
 "IsExpedited"=dword:00000000
 "AllowAutoWindowsUpdateDownloadOverMeteredNetwork"=dword:00000000
 
-; ⏫ Enhance Update Settings
+; ⏫ Update Settings
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
 "NoAutoUpdate"=dword:00000000
 "ScheduledInstallDay"=dword:00000000
 "NoAutoRebootWithLoggedOnUsers"=dword:00000001
 "ScheduledInstallEveryWeek"=dword:00000001
 
-; ➰ Delivery Optimization, help yourself and others get updates and content fast
+; ➰ Delivery Optimization - torrent-like content distribution
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
 "DODownloadMode"=dword:00000003
 "DOMaxBackgroundDownloadBandwidth"=dword:00000000

@@ -4,7 +4,7 @@ Windows Registry Editor Version 5.00
 ; 🧑‍💻 For Debugging and Advanced Users
 ; --------------------------------------------
 
-; 🐧 Sudo, easily elevate processes
+; Sudo - elevate processes faster
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Sudo]
 "Enabled"=dword:00000001
 
@@ -14,7 +14,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "PromptOnSecureDesktop"=dword:00000001
 
-; 💥 See advanced information if system crashes
+; 💥 System crash verbose information
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
 "DisplayParameters"=dword:00000001
 

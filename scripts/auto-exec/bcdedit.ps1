@@ -1,4 +1,4 @@
-# 🌱 Boot Configuration Data Editor ( BCDEdit )
+# Boot Configuration Data
 bcdedit /set bootlog no # Only for debugging
 bcdedit /set bootmenupolicy Standard
 bcdedit /set bootstatuspolicy DisplayAllFailures
@@ -7,7 +7,7 @@ bcdedit /set sos off
 #bcdedit /set nocrashautoreboot off
 bcdedit /set bootuxdisabled off # Keeps windows boot experience
 #bcdedit /set maxproc yes
-bcdedit /set disabledynamictick no
+bcdedit /set disabledynamictick no # Save energy
 #bcdedit /set usefirmwarepcisettings no
 bcdedit /set nointegritychecks off
 #bcdedit /set groupaware on

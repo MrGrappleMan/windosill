@@ -2,15 +2,14 @@
 
 # 📦 Shell Setup - Variables and Functions
 Add-Type -AssemblyName PresentationCore
-$mediaPlayer = New-Object System.Windows.Media.MediaPlayer
 $VerbosePreference = "SilentlyContinue"
 $arch = $env:PROCESSOR_ARCHITECTURE
-$sprtor = { Write-Host "_____________________________________________________________________________________________________________________________________________________________________________________________" }
 
 # User interactive
+# to be decided
 
 # Automated
 Write-Host "Leave your device idle, save all your work, and the script will automatically restart your device"
 Start-Sleep -s 3
 
-Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$path\script\main.ps1`"" -Verb RunAs
+Get-ChildItem -Path ".\scripts\auto-exec" -Filter *.ps1 | ForEach-Object { & $_.FullName }
