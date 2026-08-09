@@ -22,15 +22,14 @@ Windows Registry Editor Version 5.00
 
 ;; 📋 Memory Management
 
-; 🔜 Prefetch/Superfetch - preload frequently used parts of the FS for readahead
-; They get auto removed once a program requests for more memory
+; 🔜 Prefetch/Superfetch - preload data based on predictions, it gets cleared once true demand is seen
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
 "EnablePrefetcher"=dword:00000003
 "EnableSuperfetch"=dword:00000003
 
-; 😫 Clearing pagefile at every shutdown wears down the drive, plus some things are "cached" in it. Re creating it every time takes time as well as system resources
-; 🚛 Allow unnecessary parts of the kernel to be paged out.
-; 👍 Pagefiles prevent OOM errors in case of sudden memory pressure and some programs expect it to exist, it is a necessary fallback not a direct replacement
+; Clearing pagefile at every shutdown wears down the drive and is inefficient
+; Allow unnecessary parts of the kernel to be paged out.
+; Swap is important to exist, prevents OOMs, reduces hard memory requirements and needed by some programs
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
 "LargeSystemCache"=dword:00000001
 "IoPageLockLimit"=dword:00000000
@@ -39,11 +38,11 @@ Windows Registry Editor Version 5.00
 "PagingFiles"=hex(7):3f,00,3a,00,5c,00,70,00,61,00,67,00,65,00,66,00,69,00,6c,\
   00,65,00,2e,00,73,00,79,00,73,00,00,00
 
-; 🍘 Background defragmentation and optimize hard drive performance
+; Background defragmentation and optimize hard drive performance
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OptimalLayout]
 "EnableAutoLayout"=dword:00000001
 
-; 🍘 Enable Defrag / Trim for optimal disk health
+; Enable disk trimming
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction]
 "Enable"="Y"
 

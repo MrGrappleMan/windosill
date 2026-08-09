@@ -8,17 +8,7 @@
 
 ## ⚙️ Installation 🔽
 
-### 🧩 Requirements
-
-🧑‍💻 Administrator permissions \
-🌐 Stable internet connection
-
-### 💡 Suggestions
-
-🐧 Try aldehyde \
-✅ Use Windows 11/10 (Activated) — massgrave is acceptable
-
-### ⛩️ Installation
+You need administrator permissions and stable internet
 
 0. Save all your work and close all applications
 1. Press 🪟 Win + R \
@@ -28,15 +18,14 @@ Paste this
 wt.exe powershell.exe irm https://raw.githubusercontent.com/MrGrappleMan/windosill/refs/heads/main/start.ps1 | iex
 ```
 
-2. Press `Ctrl` + `Shift` + `Enter`
+2. Press `Ctrl` + `Shift` + `Enter`, which launches with administrator permissions
 3. A few questions will guide you through the setup
 4. The device will auto restart
 
-👀 Always verify, never assume — even when it's to be guaranteed safe.\
-The code's open if you'd like to see how it works\
-🤗 Always encourage users to align towards open and unified development
+Always verify, never assume — even when it is said to be safe
+Always encourage users to align towards open and unified development
 
-## ⚖️ Legal
+## Information
 
 This repository and its contents are provided as-is without any warranty of any\
 kind.
